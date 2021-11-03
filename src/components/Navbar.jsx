@@ -12,32 +12,32 @@ const Navbar = () => {
   const menuList = [
     {
       id: 1,
-      text: "Home",
+      text: "About",
       route: "/",
     },
     {
       id: 2,
-      text: "About Us",
+      text: "Features",
       route: "/",
     },
     {
       id: 3,
-      text: "Our Services",
+      text: "Pricing",
       route: "/",
     },
     {
       id: 4,
-      text: "Responsibilities",
+      text: "Testimonials",
       route: "/",
     },
     {
       id: 5,
-      text: "Country",
+      text: "Help",
       route: "/",
     },
   ];
   return (
-    <div className="flex flex-row justify-between items-center pt-10 mb-10 ">
+    <div className="flex flex-row justify-between items-center pt-10 px-36 mb-10 ">
       <Link to="/">
         <img src={Logo} loading="lazy" alt="" />
       </Link>
@@ -50,15 +50,21 @@ const Navbar = () => {
         <ul className="flex flex-row   ">
           {menuList.map((x) => (
             <Link key={x.id} to={x.route}>
-              <li className="mr-8 sm:mr-4 hover:font-medium  hover:border-blue-500  text-lg hover:text-primary  pb-1">
+              <li className=" mr-8 sm:mr-4 hover:font-medium  hover:border-blue-500  text-lg hover:text-primary  pb-1">
                 {x.text}
               </li>
             </Link>
           ))}
         </ul>
         <Link to="/">
-          <button className="border-blue-300 border-2 hover:text-white transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 rounded-md px-8 py-2.5 hover:bg-primary ">
-            Apply
+          <button className=" ml-32  mr-8 text-dark font-bold border-0 transition duration-500 ease-in-out hover:mr-2  transform hover:-translate-y-1 hover:scale-110 rounded-md px-8 py-2.5 hover:bg-primary ">
+            Sign In
+          </button>
+        </Link>
+
+        <Link to="/">
+          <button className=" border-2  rounded-xl hover:text-white text-primary font-bold transition duration-500 ease-in-out  hover:mr-2 transform hover:-translate-y-1 hover:scale-110  px-8 py-2.5 hover:bg-primary ">
+            Sign Up
           </button>
         </Link>
       </div>
