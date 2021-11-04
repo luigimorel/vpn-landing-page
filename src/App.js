@@ -5,7 +5,7 @@ import Main from "./pages/Main";
 
 function App() {
   return (
-    <div className="mr-4">
+    <div className=" bg-main">
       <Main />
     </div>
   );
