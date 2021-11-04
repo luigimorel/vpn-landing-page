@@ -37,7 +37,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="flex flex-row justify-between items-center pt-10 px-36 mb-10 ">
+    <div className="flex flex-row justify-between items-center pt-10 sm:px-20 px-8 mb-10 ">
       <Link to="/">
         <img src={Logo} loading="lazy" alt="" />
       </Link>
