@@ -5,6 +5,19 @@ module.exports = {
     extend: {
       backgroundImage: {},
     },
+    textColor: {
+      primary: "#F53855",
+      dark: "#0B132A",
+      grey: "#4F5665",
+      white: "#ffffff",
+    },
+    backgroundColor: {
+      primary: "#F53855",
+      grey: "#EEEFF2",
+      white: "#ffffff",
+      main: "#f2f2f2",
+      footer: "#F8F8F8",
+    },
   },
   variants: {
     extend: {},
