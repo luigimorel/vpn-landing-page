@@ -36,7 +36,9 @@ const Hero = () => {
             <User />
           </span>
           <div className="flex flex-col ">
-            <span className="text-2xl font-bold text-dark">90+</span>
+            <span className="text-2xl font-bold mr-8 sm:mr-0 text-dark">
+              90+
+            </span>
             <span className="text-grey text-xl">Users</span>
           </div>
         </div>
@@ -56,7 +58,9 @@ const Hero = () => {
             <ServerIcon />
           </span>
           <div className="flex flex-col ">
-            <span className="text-2xl font-bold  text-dark">50+</span>
+            <span className="text-2xl font-bold  mr-8 sm:mr-0 text-dark">
+              50+
+            </span>
             <span className="text-grey text-xl">Servers</span>
           </div>
         </div>
