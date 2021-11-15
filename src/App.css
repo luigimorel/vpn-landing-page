@@ -2,3 +2,7 @@
   background-color: #f53838;
   color: white;
 }
+
+.dropdown .dropdown-menu {
+  display: block;
+}
