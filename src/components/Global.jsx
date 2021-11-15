@@ -23,31 +23,21 @@ const GlobalMap = () => {
       </div>
 
       <div className="flex sm:flex-row sm:mx-20 py-16 px-8 flex-col justify-between">
-        <div className="flex flex-row items-center justify-between ">
-          <span className="mr-9 mb-4 sm:mb-0">
-            <Spotify />
-          </span>
-        </div>
-        <div className="flex flex-row items-center justify-between ">
-          <span className="mr-9 mb-4 sm:mb-0">
-            <Spotify />
-          </span>
-        </div>{" "}
-        <div className="flex flex-row items-center justify-between ">
-          <span className="mr-9 mb-4 sm:mb-0">
-            <Spotify />
-          </span>
-        </div>{" "}
-        <div className="flex flex-row items-center justify-between ">
-          <span className="mr-9 mb-4 sm:mb-0">
-            <Spotify />
-          </span>
-        </div>
-        <div className="flex flex-row items-center justify-between ">
-          <span className="mr-9 mb-4 sm:mb-0">
-            <Spotify />
-          </span>
-        </div>
+        <span className="flex mb-3 sm:mb-0 flex-row items-center justify-between ">
+          <Spotify />
+        </span>
+        <span className="flex mb-3 sm:mb-0 flex-row items-center justify-between ">
+          <Spotify />
+        </span>
+        <span className="flex mb-3 sm:mb-0 flex-row items-center justify-between ">
+          <Spotify />
+        </span>
+        <span className="flex mb-3 sm:mb-0 flex-row items-center justify-between ">
+          <Spotify />
+        </span>
+        <span className="flex mb-3 sm:mb-0 flex-row items-center justify-between ">
+          <Spotify />
+        </span>
       </div>
     </div>
   );
