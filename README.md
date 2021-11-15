@@ -6,4 +6,5 @@ This is a [LaslesVPN](https://lasleslis.netlify.app/) showcase being built with 
 
 ## Requirements
 
-- [Reactjs](https://reactjs.org) - v16 above
+- [Reactjs](https://reactjs.org) - v16 and above
+- [Tailwindcss](https://tailwindcss.com) - v2.2 and above
