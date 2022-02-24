@@ -100,57 +100,61 @@ const Footer = () => {
   ];
 
   return (
-    <div className='bg-footer text-grey sm:px-36 px-4 py-20'>
-      <div className='flex flex-col sm:flex-row justify-between'>
-        <div className='flex flex-col'>
-          <Link to='/'>
-            <img src={Logo} className='mb-6' height='100' alt='' />
-          </Link>
-          <div>
-            <p className='font-medium'>
-              LaslesVPN is a private virtual network <br /> that has unique
-              features and has high security.{' '}
-            </p>
-          </div>
-
-          <div className='flex flex-row items-center mt-4'>
-            {socialIcons.map((x) => (
-              <a
-                key={x.id}
-                href={x.link}
-                className={x.id === 3 ? '' : '  mr-5'}
-              >
-                {x.icon}
-              </a>
-            ))}
-          </div>
-          <span className='mb-4'>© {new Date().getFullYear()} Lasles VPN</span>
-        </div>
-
-        {headers.map((x) => (
+    <div className='bg-footer text-grey'>
+      <div className=' sm:px-36 lg:mx-8 ml-4  py-20'>
+        <div className='flex flex-col sm:flex-row justify-between'>
           <div className='flex flex-col'>
-            <h3 className='text-dark font-medium mb-5'>{x.text}</h3>
-            {x.id === 1 &&
-              menu1.map((x) => (
-                <a key={x.id} href={x.link} className='mb-2.5 '>
-                  {x.text}
+            <Link to='/'>
+              <img src={Logo} className='mb-6' height='100' alt='' />
+            </Link>
+            <div>
+              <p className='font-medium'>
+                LaslesVPN is a private virtual network <br /> that has unique
+                features and has high security.{' '}
+              </p>
+            </div>
+
+            <div className='flex flex-row items-center mt-4'>
+              {socialIcons.map((x) => (
+                <a
+                  key={x.id}
+                  href={x.link}
+                  className={x.id === 3 ? '' : '  mr-5'}
+                >
+                  {x.icon}
                 </a>
               ))}
-            {x.id === 2 &&
-              !(x.id === 3 || x.id === 1) &&
-              menu2.map((x) => (
-                <a key={x.id} href={x.link} className='mb-2.5 '>
-                  {x.text}
-                </a>
-              ))}
-            {x.id === 3 &&
-              menu3.map((x) => (
-                <a key={x.id} href={x.link} className='mb-2.5 '>
-                  {x.text}
-                </a>
-              ))}
+            </div>
+            <span className='mb-4 sm:mt-8'>
+              © {new Date().getFullYear()} Lasles VPN
+            </span>
           </div>
-        ))}
+
+          {headers.map((x) => (
+            <div className='flex flex-col'>
+              <h3 className='text-dark font-medium mb-5'>{x.text}</h3>
+              {x.id === 1 &&
+                menu1.map((x) => (
+                  <a key={x.id} href={x.link} className='mb-2.5 '>
+                    {x.text}
+                  </a>
+                ))}
+              {x.id === 2 &&
+                !(x.id === 3 || x.id === 1) &&
+                menu2.map((x) => (
+                  <a key={x.id} href={x.link} className='mb-2.5 '>
+                    {x.text}
+                  </a>
+                ))}
+              {x.id === 3 &&
+                menu3.map((x) => (
+                  <a key={x.id} href={x.link} className='mb-2.5 '>
+                    {x.text}
+                  </a>
+                ))}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
