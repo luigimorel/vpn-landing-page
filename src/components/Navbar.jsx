@@ -58,13 +58,13 @@ const Navbar = () => {
             </Link>
           ))}
           <Link to='/'>
-            <button className=' ml-32  mr-8 text-dark font-bold border-0 transition duration-500 ease-in-out hover:mr-2  transform hover:-translate-y-1 hover:scale-110 rounded-md px-8 py-2.5 hover:bg-primary '>
+            <button className=' ml-32  mr-8 text-dark font-bold border-0 transition duration-500 ease-in-out hover:mr-2  transform hover:-translate-y-1 hover:scale-110 rounded-md px-5 py-2.5 hover:bg-primary '>
               Sign In
             </button>
           </Link>
 
           <Link to='/'>
-            <button className=' border-2  rounded-xl hover:text-white text-primary font-bold transition duration-500 ease-in-out  hover:mr-2 transform hover:-translate-y-1 hover:scale-110  px-8 py-2.5 hover:bg-primary '>
+            <button className=' border-2  rounded-xl hover:text-white text-primary font-bold transition duration-500 ease-in-out  hover:mr-2 transform hover:-translate-y-1 hover:scale-110  px-5 py-2.5 hover:bg-primary '>
               Sign Up
             </button>
           </Link>
